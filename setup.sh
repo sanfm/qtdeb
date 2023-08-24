@@ -8,7 +8,9 @@ apt update
 
 # Install base packages
 # https://wiki.archlinux.org/title/desktop_environment
-apt install xterm unzip lightdm rofi thunar lxpolkit lxappearance xorg lightdm-gtk-greeter network-manager light-locker alsa-utils pulseaudio pavucontrol firefox-esr flameshot feh -y
+apt install xterm lightdm rofi lxpolkit  xorg  network-manager -y
+apt install unzip thunar light-locker lightdm-gtk-greeter lxappearance -y
+apt install alsa-utils pulseaudio pavucontrol firefox-esr flameshot feh -y
 
 sh ./qtile-setup.sh
 # Install qtile
@@ -21,7 +23,7 @@ pip install psutil
 # Enable lightdm on start up
 sudo systemctl enable lightdm.service
 # Custom config for lightdm & lightdm-gtk-greeter
-cp -R lightDM/* /etc/lightdm/
+#cp -R lightDM/* /etc/lightdm/
 
 
 # Copy configuration files
