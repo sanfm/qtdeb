@@ -10,10 +10,11 @@ apt update
 # https://wiki.archlinux.org/title/desktop_environment
 apt install xterm unzip lightdm rofi thunar lxpolkit lxappearance xorg lightdm-gtk-greeter network-manager light-locker alsa-utils pulseaudio pavucontrol firefox-esr flameshot feh -y
 
+sh ./qtile-setup.sh
 # Install qtile
-apt install python3 -y
-apt install xserver-xorg xinit libpangocairo-1.0-0 python3-pip python3-xcffib python3-cairocffi -y
-pip install qtile
+#apt install python3 -y
+#apt install xserver-xorg xinit libpangocairo-1.0-0 python3-pip python3-xcffib python3-cairocffi -y
+#pip install qtile
 pip install psutil
 
 
