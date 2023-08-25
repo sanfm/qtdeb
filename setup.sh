@@ -11,8 +11,8 @@ apt update
 apt install xterm lightdm rofi lxpolkit  xorg  network-manager -y
 apt install unzip thunar light-locker lightdm-gtk-greeter lxappearance -y
 apt install alsa-utils pulseaudio pavucontrol firefox-esr flameshot feh -y
-#insatall display manager (Ly https://github.com/fairyglade/ly)
-apt install build-essential libpam0g-dev libxcb-xkb-dev
+#install display manager (Ly https://github.com/fairyglade/ly)
+apt install build-essential libpam0g-dev libxcb-xkb-dev -y
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly
 make
