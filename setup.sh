@@ -11,7 +11,17 @@ apt update
 apt install xterm lightdm rofi lxpolkit  xorg  network-manager -y
 apt install unzip thunar light-locker lightdm-gtk-greeter lxappearance -y
 apt install alsa-utils pulseaudio pavucontrol firefox-esr flameshot feh -y
+#insatall display manager (Ly https://github.com/fairyglade/ly)
+apt install build-essential libpam0g-dev libxcb-xkb-dev
+git clone --recurse-submodules https://github.com/fairyglade/ly
+cd ly
+make
+make run
+make install installsystemd
+systemctl enable ly.service
 
+
+cd $builddir
 sh ./qtile-setup.sh
 # Install qtile
 #apt install python3 -y
@@ -21,7 +31,7 @@ pip install psutil
 
 
 # Enable lightdm on start up
-sudo systemctl enable lightdm.service
+#sudo systemctl enable lightdm.service
 # Custom config for lightdm & lightdm-gtk-greeter
 #cp -R lightDM/* /etc/lightdm/
 
