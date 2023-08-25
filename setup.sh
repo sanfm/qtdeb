@@ -8,10 +8,10 @@ apt update
 
 # Install base packages
 # https://wiki.archlinux.org/title/desktop_environment
-apt install xterm lightdm rofi lxpolkit  xorg  network-manager -y
-apt install unzip thunar light-locker lightdm-gtk-greeter lxappearance -y
+apt install xterm rofi lxpolkit  xorg  network-manager -y
+apt install unzip thunar light-locker lxappearance -y
 apt install alsa-utils pulseaudio pavucontrol firefox-esr flameshot feh -y
-#install display manager (Ly https://github.com/fairyglade/ly)
+#install display manager (Ly https://github.com/fairyglade/ly). lightdm lightdm-gtk-greeter
 apt install build-essential libpam0g-dev libxcb-xkb-dev -y
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly
